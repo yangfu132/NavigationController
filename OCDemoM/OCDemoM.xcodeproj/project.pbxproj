@@ -113,6 +113,8 @@
 		37436CD52CDB241E0062A4DD /* Developer */ = {
 			isa = PBXGroup;
 			children = (
+				374689072CD33119001DF14B /* DemoViewController.h */,
+				374689082CD33119001DF14B /* DemoViewController.m */,
 				37436CD62CDB24E40062A4DD /* Basic */,
 				3746891E2CD35B22001DF14B /* DVVersionViewController.h */,
 				3746891F2CD35B22001DF14B /* DVVersionViewController.m */,
@@ -133,8 +135,6 @@
 				3746890F2CD33A43001DF14B /* DemoTableViewCell.m */,
 				374689042CD330D2001DF14B /* TableViewController.h */,
 				374689052CD330D2001DF14B /* TableViewController.m */,
-				374689072CD33119001DF14B /* DemoViewController.h */,
-				374689082CD33119001DF14B /* DemoViewController.m */,
 				3746890B2CD33938001DF14B /* DemoTableViewController.h */,
 				3746890C2CD33938001DF14B /* DemoTableViewController.m */,
 				3746891A2CD35965001DF14B /* DemoCAViewController.h */,

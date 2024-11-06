@@ -81,16 +81,16 @@
 #pragma mark - Generate Boll Track
 
 - (void) generateBollTrack {
-    int rxa = rand() % 2;
-    if (0 == rxa) {
-        rxa = -1;
+    int rax = rand() % 2;
+    if (0 == rax) {
+        rax = -1;
     }
-    int rya = rand() % 2;
-    if (0 == rya) {
-        rya = -1;
+    int ray = rand() % 2;
+    if (0 == ray) {
+        ray = -1;
     }
-    CGFloat offsetX =  rand() % 100 * rxa;
-    CGFloat offsetY =  rand() % 100 * rya;
+    CGFloat offsetX =  rand() % 100 * rax;
+    CGFloat offsetY =  rand() % 100 * ray;
     CGRect bollFrame = CGRectMake(150 + offsetX, 150 + offsetY, [self getBallWidth], [self getBallWidth]);
     NSString* key = [NSString stringWithFormat:@"%lu",(unsigned long)self.lastViewArray.count];
     [self.lastViewArray addObject:key];
@@ -129,21 +129,21 @@
 
 - (CGRect) frameFromLastBoll:(CGRect)frame {
     CGRect resultFrame = frame;
-    int rxa = rand() % 2;
-    if (0 == rxa) {
-        rxa = -1;
+    int rax = rand() % 2;
+    if (0 == rax) {
+        rax = -1;
     }
     
-    int rya = rand() % 2;
-    if (0 == rya) {
-        rya = -1;
+    int ray = rand() % 2;
+    if (0 == ray) {
+        ray = -1;
     }
     
     CGFloat rx = rand() % 10;
     CGFloat ry = rand() % 10;
     
-    resultFrame.origin.x = resultFrame.origin.x + rx * rxa;
-    resultFrame.origin.y = resultFrame.origin.y + ry * rya;
+    resultFrame.origin.x = resultFrame.origin.x + rx * rax;
+    resultFrame.origin.y = resultFrame.origin.y + ry * ray;
     
     resultFrame = [self frameFromCheckCollision:resultFrame];
     

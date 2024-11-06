@@ -71,6 +71,7 @@
 }
 
 
+
 - (void) onButtonClicked:(id)sender {
     LCAnimationViewContoller* lcVC = [[LCAnimationViewContoller alloc] init];
     [self.navigationController pushViewController:lcVC animated:YES];
