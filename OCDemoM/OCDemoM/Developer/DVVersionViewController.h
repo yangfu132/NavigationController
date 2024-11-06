@@ -1,5 +1,5 @@
 //
-//  LCAnimationViewController.h
+//  DVVersionViewController.h
 //  OCDemoM
 //
 //  Created by FlutterRole on 2024/10/31.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LCAnimationViewController : UIViewController
+@interface DVVersionViewController : UIViewController
 
 @end
 

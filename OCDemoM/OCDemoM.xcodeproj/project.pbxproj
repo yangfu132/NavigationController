@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37436CD92CDB250F0062A4DD /* LCAnimationViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 37436CD82CDB250F0062A4DD /* LCAnimationViewContoller.m */; };
 		374689062CD330D2001DF14B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374689052CD330D2001DF14B /* TableViewController.m */; };
 		374689092CD33119001DF14B /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374689082CD33119001DF14B /* DemoViewController.m */; };
 		3746890D2CD33938001DF14B /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746890C2CD33938001DF14B /* DemoTableViewController.m */; };
@@ -15,8 +16,8 @@
 		374689172CD34627001DF14B /* DemoAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374689162CD34627001DF14B /* DemoAnimationViewController.m */; };
 		374689192CD3480C001DF14B /* nothing.m in Sources */ = {isa = PBXBuildFile; fileRef = 374689182CD3480C001DF14B /* nothing.m */; };
 		3746891C2CD35965001DF14B /* DemoCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746891B2CD35965001DF14B /* DemoCAViewController.m */; };
-		374689202CD35B22001DF14B /* LCAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746891F2CD35B22001DF14B /* LCAnimationViewController.m */; };
-		37644F7C2CD4A3D50024A5B2 /* LCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37644F7B2CD4A3D50024A5B2 /* LCDemoViewController.m */; };
+		374689202CD35B22001DF14B /* DVVersionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746891F2CD35B22001DF14B /* DVVersionViewController.m */; };
+		37644F7C2CD4A3D50024A5B2 /* DVVersionAViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 37644F7B2CD4A3D50024A5B2 /* DVVersionAViewContoller.m */; };
 		37FCCF602CD32ED900A30675 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FCCF5F2CD32ED900A30675 /* AppDelegate.m */; };
 		37FCCF632CD32ED900A30675 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FCCF622CD32ED900A30675 /* SceneDelegate.m */; };
 		37FCCF692CD32ED900A30675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FCCF672CD32ED900A30675 /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37436CD72CDB250F0062A4DD /* LCAnimationViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAnimationViewContoller.h; sourceTree = "<group>"; };
+		37436CD82CDB250F0062A4DD /* LCAnimationViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAnimationViewContoller.m; sourceTree = "<group>"; };
 		374689042CD330D2001DF14B /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		374689052CD330D2001DF14B /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		374689072CD33119001DF14B /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
@@ -61,10 +64,10 @@
 		374689182CD3480C001DF14B /* nothing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nothing.m; sourceTree = "<group>"; };
 		3746891A2CD35965001DF14B /* DemoCAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCAViewController.h; sourceTree = "<group>"; };
 		3746891B2CD35965001DF14B /* DemoCAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCAViewController.m; sourceTree = "<group>"; };
-		3746891E2CD35B22001DF14B /* LCAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAnimationViewController.h; sourceTree = "<group>"; };
-		3746891F2CD35B22001DF14B /* LCAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAnimationViewController.m; sourceTree = "<group>"; };
-		37644F7A2CD4A3D50024A5B2 /* LCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCDemoViewController.h; sourceTree = "<group>"; };
-		37644F7B2CD4A3D50024A5B2 /* LCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCDemoViewController.m; sourceTree = "<group>"; };
+		3746891E2CD35B22001DF14B /* DVVersionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVVersionViewController.h; sourceTree = "<group>"; };
+		3746891F2CD35B22001DF14B /* DVVersionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVVersionViewController.m; sourceTree = "<group>"; };
+		37644F7A2CD4A3D50024A5B2 /* DVVersionAViewContoller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVVersionAViewContoller.h; sourceTree = "<group>"; };
+		37644F7B2CD4A3D50024A5B2 /* DVVersionAViewContoller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVVersionAViewContoller.m; sourceTree = "<group>"; };
 		37FCCF5B2CD32ED900A30675 /* OCDemoM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemoM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FCCF5E2CD32ED900A30675 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37FCCF5F2CD32ED900A30675 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,26 +110,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3746890A2CD33471001DF14B /* New Group */ = {
+		37436CD52CDB241E0062A4DD /* Developer */ = {
 			isa = PBXGroup;
 			children = (
+				37436CD62CDB24E40062A4DD /* Basic */,
+				3746891E2CD35B22001DF14B /* DVVersionViewController.h */,
+				3746891F2CD35B22001DF14B /* DVVersionViewController.m */,
+				374689122CD3424E001DF14B /* AnimationViewController.h */,
+				374689132CD3424E001DF14B /* AnimationViewController.m */,
+				374689152CD34627001DF14B /* DemoAnimationViewController.h */,
+				374689162CD34627001DF14B /* DemoAnimationViewController.m */,
+				37644F7A2CD4A3D50024A5B2 /* DVVersionAViewContoller.h */,
+				37644F7B2CD4A3D50024A5B2 /* DVVersionAViewContoller.m */,
+			);
+			path = Developer;
+			sourceTree = "<group>";
+		};
+		37436CD62CDB24E40062A4DD /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				3746890E2CD33A43001DF14B /* DemoTableViewCell.h */,
+				3746890F2CD33A43001DF14B /* DemoTableViewCell.m */,
+				374689042CD330D2001DF14B /* TableViewController.h */,
+				374689052CD330D2001DF14B /* TableViewController.m */,
+				374689072CD33119001DF14B /* DemoViewController.h */,
+				374689082CD33119001DF14B /* DemoViewController.m */,
 				3746890B2CD33938001DF14B /* DemoTableViewController.h */,
 				3746890C2CD33938001DF14B /* DemoTableViewController.m */,
 				3746891A2CD35965001DF14B /* DemoCAViewController.h */,
 				3746891B2CD35965001DF14B /* DemoCAViewController.m */,
 			);
-			path = "New Group";
+			path = Basic;
 			sourceTree = "<group>";
 		};
-		3746891D2CD35B07001DF14B /* Animation */ = {
+		3746891D2CD35B07001DF14B /* LCAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				3746891E2CD35B22001DF14B /* LCAnimationViewController.h */,
-				3746891F2CD35B22001DF14B /* LCAnimationViewController.m */,
-				37644F7A2CD4A3D50024A5B2 /* LCDemoViewController.h */,
-				37644F7B2CD4A3D50024A5B2 /* LCDemoViewController.m */,
+				37436CD72CDB250F0062A4DD /* LCAnimationViewContoller.h */,
+				37436CD82CDB250F0062A4DD /* LCAnimationViewContoller.m */,
 			);
-			path = Animation;
+			path = LCAnimation;
 			sourceTree = "<group>";
 		};
 		37FCCF522CD32ED900A30675 = {
@@ -152,27 +175,17 @@
 		37FCCF5D2CD32ED900A30675 /* OCDemoM */ = {
 			isa = PBXGroup;
 			children = (
-				3746891D2CD35B07001DF14B /* Animation */,
-				3746890A2CD33471001DF14B /* New Group */,
+				37436CD52CDB241E0062A4DD /* Developer */,
+				3746891D2CD35B07001DF14B /* LCAnimation */,
 				37FCCF5E2CD32ED900A30675 /* AppDelegate.h */,
 				37FCCF5F2CD32ED900A30675 /* AppDelegate.m */,
 				37FCCF612CD32ED900A30675 /* SceneDelegate.h */,
 				37FCCF622CD32ED900A30675 /* SceneDelegate.m */,
 				37FCCF672CD32ED900A30675 /* Main.storyboard */,
-				3746890E2CD33A43001DF14B /* DemoTableViewCell.h */,
-				3746890F2CD33A43001DF14B /* DemoTableViewCell.m */,
 				37FCCF6A2CD32EDC00A30675 /* Assets.xcassets */,
 				37FCCF6C2CD32EDC00A30675 /* LaunchScreen.storyboard */,
 				37FCCF6F2CD32EDC00A30675 /* Info.plist */,
 				37FCCF702CD32EDC00A30675 /* main.m */,
-				374689042CD330D2001DF14B /* TableViewController.h */,
-				374689052CD330D2001DF14B /* TableViewController.m */,
-				374689072CD33119001DF14B /* DemoViewController.h */,
-				374689082CD33119001DF14B /* DemoViewController.m */,
-				374689122CD3424E001DF14B /* AnimationViewController.h */,
-				374689132CD3424E001DF14B /* AnimationViewController.m */,
-				374689152CD34627001DF14B /* DemoAnimationViewController.h */,
-				374689162CD34627001DF14B /* DemoAnimationViewController.m */,
 				374689182CD3480C001DF14B /* nothing.m */,
 			);
 			path = OCDemoM;
@@ -326,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3746890D2CD33938001DF14B /* DemoTableViewController.m in Sources */,
-				37644F7C2CD4A3D50024A5B2 /* LCDemoViewController.m in Sources */,
+				37644F7C2CD4A3D50024A5B2 /* DVVersionAViewContoller.m in Sources */,
 				374689102CD33A43001DF14B /* DemoTableViewCell.m in Sources */,
 				37FCCF602CD32ED900A30675 /* AppDelegate.m in Sources */,
 				374689142CD3424E001DF14B /* AnimationViewController.m in Sources */,
@@ -334,7 +347,8 @@
 				374689092CD33119001DF14B /* DemoViewController.m in Sources */,
 				374689172CD34627001DF14B /* DemoAnimationViewController.m in Sources */,
 				3746891C2CD35965001DF14B /* DemoCAViewController.m in Sources */,
-				374689202CD35B22001DF14B /* LCAnimationViewController.m in Sources */,
+				374689202CD35B22001DF14B /* DVVersionViewController.m in Sources */,
+				37436CD92CDB250F0062A4DD /* LCAnimationViewContoller.m in Sources */,
 				374689192CD3480C001DF14B /* nothing.m in Sources */,
 				374689062CD330D2001DF14B /* TableViewController.m in Sources */,
 				37FCCF632CD32ED900A30675 /* SceneDelegate.m in Sources */,

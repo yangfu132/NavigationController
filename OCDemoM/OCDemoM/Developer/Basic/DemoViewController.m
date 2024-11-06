@@ -6,9 +6,10 @@
 //
 
 #import "DemoViewController.h"
-#import "LCDemoViewController.h"
+#import "DVVersionAViewContoller.h"
 #import "AnimationViewController.h"
 #import "DemoAnimationViewController.h"
+#import "LCAnimationViewContoller.h"
 @interface DemoViewController ()
 
 @end
@@ -23,7 +24,7 @@
     [self.view addSubview:[self getButton]];
     [self.view addSubview:[self getButton1]];
     [self.view addSubview:[self getButton2]];
-    
+    [self.view addSubview:[self getButton3]];
     
 }
 
@@ -61,9 +62,17 @@
     return button;
 }
 
+- (UIButton*) getButton3 {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(150, 210, 100, 100);
+    button.backgroundColor = [UIColor yellowColor];
+    [button addTarget:self action:@selector(onButton3Clicked:) forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
+
 
 - (void) onButtonClicked:(id)sender {
-    LCDemoViewController* lcVC = [[LCDemoViewController alloc] init];
+    LCAnimationViewContoller* lcVC = [[LCAnimationViewContoller alloc] init];
     [self.navigationController pushViewController:lcVC animated:YES];
 #ifdef DEBUG
     NSLog(@"onButtonClicked");
@@ -81,6 +90,14 @@
 - (void) onButton2Clicked:(id)sender {
     DemoAnimationViewController* tableVC = [[DemoAnimationViewController alloc] init];
     [self.navigationController pushViewController:tableVC animated:YES];
+#ifdef DEBUG
+    NSLog(@"onButtonClicked");
+#endif
+}
+
+- (void) onButton3Clicked:(id)sender {
+    DVVersionAViewContoller* lcVC = [[DVVersionAViewContoller alloc] init];
+    [self.navigationController pushViewController:lcVC animated:YES];
 #ifdef DEBUG
     NSLog(@"onButtonClicked");
 #endif

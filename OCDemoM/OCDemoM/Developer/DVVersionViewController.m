@@ -1,13 +1,13 @@
 //
-//  LCAnimationViewController.m
+//  DVVersionViewController.m
 //  OCDemoM
 //
 //  Created by FlutterRole on 2024/10/31.
 //
 
-#import "LCAnimationViewController.h"
+#import "DVVersionViewController.h"
 
-@interface LCAnimationViewController ()
+@interface DVVersionViewController ()
 @property (nonatomic, strong) UIView* drawView;
 @property (nonatomic, strong) UIView* lastView;
 @property (nonatomic, strong) NSMutableArray* lastViewArray;
@@ -15,7 +15,7 @@
 @property (nonatomic, weak) NSTimer *timer;
 @end
 
-@implementation LCAnimationViewController
+@implementation DVVersionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
