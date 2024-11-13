@@ -11,9 +11,16 @@
 
 @interface LCAnimationViewContoller ()
 @property (nonatomic, strong) UIView* drawView;
+@property (nonatomic, strong) UIView* protectView;
 @property (nonatomic, strong) UIView* lastView;
 @property (nonatomic, strong) NSMutableArray* lastViewArray;
 @property (nonatomic, strong) NSMutableDictionary* lastViewDictionary;
+@property (nonatomic, strong) NSMutableDictionary* abilityDictionary;
+@property (nonatomic, strong) NSMutableDictionary* collisionDictionary;
+@property (nonatomic, strong) NSMutableDictionary* xDictionary;
+@property (nonatomic, strong) NSMutableDictionary* yDictionary;
+@property (nonatomic, strong) NSMutableDictionary* widthDictionary;
+@property (nonatomic, strong) NSMutableDictionary* heightDictionary;
 @property (nonatomic, weak) NSTimer *timer;
 @end
 
@@ -23,6 +30,12 @@
     [super viewDidLoad];
     
     self.lastViewDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.abilityDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.collisionDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.xDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.yDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.widthDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
+    self.heightDictionary = [NSMutableDictionary dictionaryWithCapacity:3];
     self.lastViewArray = [NSMutableArray arrayWithCapacity:3];
     
     // Do any additional setup after loading the view.
@@ -31,6 +44,14 @@
     //添加画布
     self.drawView = [self getDrawView];
     [self.view addSubview:self.drawView];
+    
+    //增加保护区
+    self.protectView = [self getProtectView];
+    [self.drawView addSubview:self.protectView];
+    
+    //进入保护区增加分裂能力：参见updateAbility
+    
+    //碰撞到边缘分裂成两个新的小球，新的小球不具有分裂能力:参见generateCollision
     
     //添加开始按钮
     [self.view addSubview:[self generateButton]];
@@ -44,6 +65,77 @@
     
     //碰撞反弹:参见frameFromCheckCollision
     
+}
+
+//进入保护区增加分裂能力
+- (void) updateAbility:(NSString*)viewKey {
+    if ([self checkEnter:viewKey]) {
+        [self.abilityDictionary setObject:@(YES) forKey:viewKey];
+    } // else nothing
+}
+
+- (BOOL) checkEnter:(NSString*)viewKey {
+    CAShapeLayer* lastLayer = [self.lastViewDictionary objectForKey:viewKey];
+    UIBezierPath* path = [UIBezierPath bezierPathWithCGPath:lastLayer.path];
+    CGRect frame = path.bounds;
+    CGRect protectFrame = self.protectView.frame;
+    BOOL bResult = NO;
+    BOOL bResultLeft = NO;
+    if (frame.origin.x >= protectFrame.origin.x && frame.origin.y >= protectFrame.origin.y) {
+        bResultLeft = YES;
+    }
+    
+    if (frame.origin.x + frame.size.width <= protectFrame.origin.x + protectFrame.size.width && frame.origin.y + frame.size.height <= protectFrame.origin.y + protectFrame.size.height) {
+        if (bResultLeft) {
+            bResult = YES;
+        }
+    }
+    
+    return bResult;
+    
+}
+
+//碰撞到边缘分裂成两个新的小球，新的小球不具有分裂能力
+
+- (void) generateCollision:(NSString*)viewKey {
+    BOOL bCollision = [[self.collisionDictionary objectForKey:viewKey] boolValue];
+    BOOL bAbility = [[self.abilityDictionary objectForKey:viewKey] boolValue];
+    if (bCollision && bAbility) {
+        
+        CGPoint point = [self getCollisionPoint:viewKey];
+        CGRect bollFrame = CGRectMake(point.x, point.y, [self getBallWidth], [self getBallWidth]);
+        [self generateBollTrackCollision:bollFrame];
+        [self generateBollTrackCollision:bollFrame];
+    }
+}
+
+- (void) generateBollTrackCollision:(CGRect)bollFrame {
+    NSString* key = [NSString stringWithFormat:@"%lu",(unsigned long)self.lastViewArray.count];
+    [self.lastViewArray addObject:key];
+    [self drawBoll:bollFrame key:key];
+}
+
+- (CGPoint) getCollisionPoint:(NSString*)viewKey {
+    CGFloat x = [[self.xDictionary objectForKey:viewKey] doubleValue];
+    CGFloat y = [[self.yDictionary objectForKey:viewKey] doubleValue];
+    return CGPointMake(x, y);
+}
+
+#pragma mark - protect View
+
+- (CGRect) getProtectViewFrame {
+    CGFloat width = 200;
+    CGFloat height = 200;
+    CGFloat x = ([self getDrawViewFrame].size.width - width) / 2;
+    CGFloat y = ([self getDrawViewFrame].size.height - height) / 2;
+    return CGRectMake(x, y, width, height);
+}
+
+- (UIView*) getProtectView {
+    UIView* view = [[UIView alloc] init];
+    view.frame = [self getProtectViewFrame];
+    view.backgroundColor = [UIColor redColor];
+    return view;
 }
 
 #pragma mark - Draw View
@@ -91,14 +183,16 @@
     }
     CGFloat offsetX =  rand() % 100 * rax;
     CGFloat offsetY =  rand() % 100 * ray;
-    CGRect bollFrame = CGRectMake(150 + offsetX, 150 + offsetY, [self getBallWidth], [self getBallWidth]);
+    CGFloat width = [self getDrawViewFrame].size.width;
+    CGFloat height = [self getDrawViewFrame].size.height;
+    CGRect bollFrame = CGRectMake(width / 2 + offsetX, height / 2 + offsetY, [self getBallWidth], [self getBallWidth]);
     NSString* key = [NSString stringWithFormat:@"%lu",(unsigned long)self.lastViewArray.count];
     [self.lastViewArray addObject:key];
     [self drawBoll:bollFrame key:key];
 }
 
 - (void) drawBoll:(CGRect)bollFrame key:(NSString*)viewKey{
-    bollFrame = [self frameFromLastBoll:bollFrame];
+    bollFrame = [self frameFromLastBoll:bollFrame key:viewKey];
 #if CALAYER_TEST
     CAShapeLayer* lastLayer = [self createBollLayer:bollFrame];
     [self.lastViewDictionary setObject:lastLayer forKey:viewKey];
@@ -108,6 +202,8 @@
     [self.lastViewDictionary setObject:lastView forKey:viewKey];
     [self.drawView addSubview:lastView];
 #endif
+    [self updateAbility:viewKey];
+    [self generateCollision:viewKey];
 }
 
 - (UIView*) createBollView:(CGRect)frame {
@@ -127,7 +223,7 @@
     return layer;
 }
 
-- (CGRect) frameFromLastBoll:(CGRect)frame {
+- (CGRect) frameFromLastBoll:(CGRect)frame key:(NSString*)viewKey{
     CGRect resultFrame = frame;
     int rax = rand() % 2;
     if (0 == rax) {
@@ -145,7 +241,7 @@
     resultFrame.origin.x = resultFrame.origin.x + rx * rax;
     resultFrame.origin.y = resultFrame.origin.y + ry * ray;
     
-    resultFrame = [self frameFromCheckCollision:resultFrame];
+    resultFrame = [self frameFromCheckCollision:resultFrame key:viewKey];
     
     return resultFrame;
 }
@@ -167,22 +263,30 @@
 #pragma mark - Move Boll
 
 - (void) moveBollWithTimer {
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(moveBollTrack) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(moveBollTrack) userInfo:nil repeats:YES];
     _timer = timer;
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
 
 - (void) moveBollTrack {
-    for (NSString* key in self.lastViewArray) {
+    NSArray* array = [self.lastViewArray copy];
+    for (NSString* key in array) {
         [self moveBollWithKey:key];
     }
 }
 
 - (void) moveBollWithKey:(NSString*)viewKey {
 #if CALAYER_TEST
-    CAShapeLayer* lastLayer = [self.lastViewDictionary objectForKey:viewKey];
-    UIBezierPath* path = [UIBezierPath bezierPathWithCGPath:lastLayer.path];
-    [self drawBoll:path.bounds key:viewKey];
+    BOOL bCollision = [[self.collisionDictionary objectForKey:viewKey] boolValue];;
+    BOOL bAbility = [[self.abilityDictionary objectForKey:viewKey] boolValue];
+    if (bCollision && bAbility) {
+        
+    } else {
+        CAShapeLayer* lastLayer = [self.lastViewDictionary objectForKey:viewKey];
+        UIBezierPath* path = [UIBezierPath bezierPathWithCGPath:lastLayer.path];
+        [self drawBoll:path.bounds key:viewKey];
+    }
+
 #else
     UIView* lastView = [self.lastViewDictionary objectForKey:viewKey];
     [self drawBoll:lastView.frame key:viewKey];
@@ -191,26 +295,40 @@
 
 #pragma mark - Collision
 
-- (CGRect) frameFromCheckCollision:(CGRect) frame {
+- (CGRect) frameFromCheckCollision:(CGRect) frame key:(NSString*)viewKey{
+    CGFloat width = [self getDrawViewFrame].size.width;
+    CGFloat height = [self getDrawViewFrame].size.height;
+    BOOL bCollision = NO;
     //上
     if (frame.origin.y < 0) {
         frame.origin.y = 10;
+        bCollision = YES;
     }
     
     //下
-    if (frame.origin.y + frame.size.height > 300) {
+    if (frame.origin.y + frame.size.height > height) {
         frame.origin.y = frame.origin.y - 30;
+        bCollision = YES;
     }
     
     //左
     if (frame.origin.x < 0) {
         frame.origin.x = 10;
+        bCollision = YES;
     }
     
     //右
-    if (frame.origin.x + frame.size.width > 300) {
+    if (frame.origin.x + frame.size.width > width) {
         frame.origin.x = frame.origin.x - 30;
+        bCollision = YES;
     }
+    
+    [self.xDictionary setObject:@(frame.origin.x) forKey:viewKey];
+    [self.yDictionary setObject:@(frame.origin.y) forKey:viewKey];
+    [self.widthDictionary setObject:@(frame.size.width) forKey:viewKey];
+    [self.heightDictionary setObject:@(frame.size.height) forKey:viewKey];
+    
+    [self.collisionDictionary setObject:@(bCollision) forKey:viewKey];
     
     return frame;
 }
