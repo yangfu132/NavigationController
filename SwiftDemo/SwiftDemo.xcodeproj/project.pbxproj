@@ -17,6 +17,7 @@
 		379EA1922CE33F4F00F1F4D6 /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1912CE33F4F00F1F4D6 /* SwiftDemoTests.swift */; };
 		379EA19C2CE33F4F00F1F4D6 /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA19B2CE33F4F00F1F4D6 /* SwiftDemoUITests.swift */; };
 		379EA19E2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA19D2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift */; };
+		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		379EA1972CE33F4F00F1F4D6 /* SwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		379EA19B2CE33F4F00F1F4D6 /* SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITests.swift; sourceTree = "<group>"; };
 		379EA19D2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				379EA1852CE33F4F00F1F4D6 /* LaunchScreen.storyboard */,
 				379EA1882CE33F4F00F1F4D6 /* Info.plist */,
 				379EA1802CE33F4E00F1F4D6 /* SwiftDemo.xcdatamodeld */,
+				A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
+				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

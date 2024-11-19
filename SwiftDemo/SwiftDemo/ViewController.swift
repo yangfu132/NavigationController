@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     var boolean_expression:Bool = true;
@@ -14,6 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var tsDemo:TestStringClass = TestStringClass();
+        tsDemo.testString()
         testIf();
         testFor()
     }
@@ -63,7 +66,5 @@ class ViewController: UIViewController {
         
         return 0
     }
-
-
 }
 
