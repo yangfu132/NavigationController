@@ -20,8 +20,11 @@ class ViewController: UIViewController {
         let forDemo:TestForClass = TestForClass();
         forDemo.testFor()
         
-        let tsDemo:TestStringClass = TestStringClass();
-        tsDemo.testString()
+        let tsStringObj:TestStringClass = TestStringClass();
+        tsStringObj.testString()
+        
+        let tsArrayObj:TestArrayClass = TestArrayClass()
+        tsArrayObj.testArray()
         
         testIf();
     }

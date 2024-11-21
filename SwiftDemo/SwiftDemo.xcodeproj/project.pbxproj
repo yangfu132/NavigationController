@@ -19,6 +19,7 @@
 		379EA19E2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA19D2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift */; };
 		379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */; };
 		379EA1AD2CEF009700F1F4D6 /* TestForClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */; };
+		379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		379EA19D2CE33F4F00F1F4D6 /* SwiftDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharacterClass.swift; sourceTree = "<group>"; };
 		379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestForClass.swift; sourceTree = "<group>"; };
+		379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayClass.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */,
 				379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */,
 				379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */,
+				379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				379EA1822CE33F4E00F1F4D6 /* SwiftDemo.xcdatamodeld in Sources */,
 				379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */,
 				379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */,
+				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
