@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let forDemo:TestForClass = TestForClass();
         forDemo.testFor()
         
-        var tsDemo:TestStringClass = TestStringClass();
+        let tsDemo:TestStringClass = TestStringClass();
         tsDemo.testString()
         
         testIf();
