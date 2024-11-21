@@ -15,10 +15,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+  
+        
+        let forDemo:TestForClass = TestForClass();
+        forDemo.testFor()
+        
         var tsDemo:TestStringClass = TestStringClass();
         tsDemo.testString()
+        
         testIf();
-        testFor()
     }
     
     func testIf() {
@@ -30,41 +35,5 @@ class ViewController: UIViewController {
         }
     }
     
-    func testFor(){
-        testForIn();
-        testForWhile();
-        testForWhile();
-    }
-    
-    func testForIn() {
-        for index in 1...5 {
-            print("\(index) 乘于 5 为：\(index * 5)")
-        }
-        
-        var someInts:[Int] = [10, 20, 30]
-        for index in 0..<someInts.count {
-            print( "索引 [\(index)] 对应的值为 \(someInts[index])")
-        }
-    }
-    
-    func testForWhile() {
-        var index = 10
-        while index < 20
-        {
-           print( "index 的值为 \(index)")
-           index = index + 1
-        }
-    }
-    
-    func testForWhile() -> Int {
-        var index = 15
-
-        repeat{
-            print( "index 的值为 \(index)")
-            index = index + 1
-        }while index < 20
-        
-        return 0
-    }
 }
 
