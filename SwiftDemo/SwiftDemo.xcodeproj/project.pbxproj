@@ -20,6 +20,7 @@
 		379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */; };
 		379EA1AD2CEF009700F1F4D6 /* TestForClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */; };
 		379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */; };
+		37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharacterClass.swift; sourceTree = "<group>"; };
 		379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestForClass.swift; sourceTree = "<group>"; };
 		379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayClass.swift; sourceTree = "<group>"; };
+		37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionaryClass.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */,
 				379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */,
 				379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */,
+				37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */,
 				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
+				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
 			);

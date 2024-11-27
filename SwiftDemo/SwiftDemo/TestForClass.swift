@@ -12,7 +12,7 @@ class TestForClass {
     func testFor(){
         testForIn();
         testForWhile();
-        testForWhile();
+        testForRepeat();
     }
     
     func testForIn() {
@@ -35,7 +35,7 @@ class TestForClass {
         }
     }
     
-    func testForWhile() -> Int {
+    func testForRepeat() -> Int {
         var index = 15
 
         repeat{

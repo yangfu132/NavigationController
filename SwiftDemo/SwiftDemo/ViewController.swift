@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         tsArrayObj.testArray()
         
         testIf();
+        
+        testDictionary();
+    }
+    
+    func testDictionary() {
+        let demo = TestDictionaryClass()
+        demo.testDictionary()
     }
     
     func testIf() {
