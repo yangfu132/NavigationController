@@ -20,6 +20,8 @@
 		379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */; };
 		379EA1AD2CEF009700F1F4D6 /* TestForClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */; };
 		379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */; };
+		379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FEF9C2CF6C19800C391DE /* TestBlockClass.swift */; };
+		379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */; };
 		37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,10 @@
 		379EA1AA2CEC753D00F1F4D6 /* TestCharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharacterClass.swift; sourceTree = "<group>"; };
 		379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestForClass.swift; sourceTree = "<group>"; };
 		379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayClass.swift; sourceTree = "<group>"; };
+		379FEF9C2CF6C19800C391DE /* TestBlockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBlockClass.swift; sourceTree = "<group>"; };
+		379FEF9E2CF6F5F100C391DE /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		379FEF9F2CF6F5F100C391DE /* TestBlockOCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlockOCClass.h; sourceTree = "<group>"; };
+		379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlockOCClass.m; sourceTree = "<group>"; };
 		37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionaryClass.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +130,10 @@
 				379EA1AC2CEF009700F1F4D6 /* TestForClass.swift */,
 				379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */,
 				37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */,
+				379FEF9C2CF6C19800C391DE /* TestBlockClass.swift */,
+				379FEF9F2CF6F5F100C391DE /* TestBlockOCClass.h */,
+				379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */,
+				379FEF9E2CF6F5F100C391DE /* SwiftDemo-Bridging-Header.h */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 				TargetAttributes = {
 					379EA1732CE33F4D00F1F4D6 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					379EA18C2CE33F4F00F1F4D6 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -282,6 +293,8 @@
 				379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */,
 				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
+				379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */,
+				379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
@@ -461,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -478,6 +492,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangfuliang.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/SwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -505,6 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangfuliang.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo/SwiftDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

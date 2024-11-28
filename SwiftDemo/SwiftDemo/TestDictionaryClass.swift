@@ -7,8 +7,8 @@
 
 import Foundation
 
-class TestDictionaryClass {
-    func testDictionary () {
+class TestDictionaryClass: NSObject {
+    @objc func testDictionary () {
         testCreate()
         testValue()
         testModify()

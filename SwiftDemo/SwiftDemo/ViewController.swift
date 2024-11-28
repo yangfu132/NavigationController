@@ -15,20 +15,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-  
+//        testFor()
+//        testString()
+//        testArray()
+//        testIf();
+//        testDictionary();
         
-        let forDemo:TestForClass = TestForClass();
-        forDemo.testFor()
-        
-        let tsStringObj:TestStringClass = TestStringClass();
-        tsStringObj.testString()
-        
+        testBlok();
+        testOCBlock();
+    }
+    
+    func testArray() {
         let tsArrayObj:TestArrayClass = TestArrayClass()
         tsArrayObj.testArray()
-        
-        testIf();
-        
-        testDictionary();
+    }
+    
+    func testString() {
+        let tsStringObj:TestStringClass = TestStringClass();
+        tsStringObj.testString()
+    }
+    
+    func testFor(){
+        let forDemo:TestForClass = TestForClass();
+        forDemo.testFor()
+    }
+    
+    func testOCBlock() {
+        let demo = TestBlockOCClass()
+        demo.testBlock()
+    }
+    
+    func testBlok() {
+        let blockDemo = TestBlockClass()
+        blockDemo.testBlock()
     }
     
     func testDictionary() {
