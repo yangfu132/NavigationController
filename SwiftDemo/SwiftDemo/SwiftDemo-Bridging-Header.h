@@ -3,3 +3,4 @@
 //
 
 #import "TestBlockOCClass.h"
+#import "TestEnumOCClass.h"

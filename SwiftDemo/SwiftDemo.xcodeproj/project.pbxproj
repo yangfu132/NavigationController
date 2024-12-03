@@ -22,6 +22,8 @@
 		379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1AE2CEF053F00F1F4D6 /* TestArrayClass.swift */; };
 		379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379FEF9C2CF6C19800C391DE /* TestBlockClass.swift */; };
 		379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */; };
+		37CBAACA2CF807E800EE3E13 /* TestEnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CBAAC92CF807E800EE3E13 /* TestEnumClass.swift */; };
+		37CBAACD2CF8087200EE3E13 /* TestEnumOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBAACC2CF8087200EE3E13 /* TestEnumOCClass.m */; };
 		37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,9 @@
 		379FEF9E2CF6F5F100C391DE /* SwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		379FEF9F2CF6F5F100C391DE /* TestBlockOCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlockOCClass.h; sourceTree = "<group>"; };
 		379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlockOCClass.m; sourceTree = "<group>"; };
+		37CBAAC92CF807E800EE3E13 /* TestEnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnumClass.swift; sourceTree = "<group>"; };
+		37CBAACB2CF8087200EE3E13 /* TestEnumOCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEnumOCClass.h; sourceTree = "<group>"; };
+		37CBAACC2CF8087200EE3E13 /* TestEnumOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEnumOCClass.m; sourceTree = "<group>"; };
 		37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionaryClass.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +139,9 @@
 				379FEF9F2CF6F5F100C391DE /* TestBlockOCClass.h */,
 				379FEFA02CF6F5F100C391DE /* TestBlockOCClass.m */,
 				379FEF9E2CF6F5F100C391DE /* SwiftDemo-Bridging-Header.h */,
+				37CBAAC92CF807E800EE3E13 /* TestEnumClass.swift */,
+				37CBAACB2CF8087200EE3E13 /* TestEnumOCClass.h */,
+				37CBAACC2CF8087200EE3E13 /* TestEnumOCClass.m */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -294,8 +302,10 @@
 				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
 				379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */,
+				37CBAACD2CF8087200EE3E13 /* TestEnumOCClass.m in Sources */,
 				379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
+				37CBAACA2CF807E800EE3E13 /* TestEnumClass.swift in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
 			);

@@ -21,8 +21,15 @@ class ViewController: UIViewController {
 //        testIf();
 //        testDictionary();
         
-        testBlok();
-        testOCBlock();
+        //testBlok();
+    }
+    
+    func testEnum() {
+        let enumSwift = TestEnumClass()
+        enumSwift.testEnum()
+        
+        let enumOC = TestEnumOCClass()
+        enumOC.testEnum()
     }
     
     func testArray() {
@@ -39,15 +46,13 @@ class ViewController: UIViewController {
         let forDemo:TestForClass = TestForClass();
         forDemo.testFor()
     }
-    
-    func testOCBlock() {
-        let demo = TestBlockOCClass()
-        demo.testBlock()
-    }
-    
+
     func testBlok() {
         let blockDemo = TestBlockClass()
         blockDemo.testBlock()
+        
+        let demo = TestBlockOCClass()
+        demo.testBlock()
     }
     
     func testDictionary() {
