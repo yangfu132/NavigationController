@@ -22,6 +22,18 @@ class ViewController: UIViewController {
 //        testDictionary();
         
         //testBlok();
+//        testEnum();
+        testClass();
+    }
+    
+    func testClass() {
+        let classDemo = TestClassDemo()
+        classDemo.testClass()
+    }
+    
+    func testTuple(){
+        let demoSwift = TestTupleDemo()
+        demoSwift.testTuple()
     }
     
     func testEnum() {
