@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3746CF8A2D1A4A47009A0681 /* TestClassDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746CF892D1A4A47009A0681 /* TestClassDemo.swift */; };
+		3746CF8D2D1A569F009A0681 /* TestClassOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CF8C2D1A569F009A0681 /* TestClassOC.m */; };
 		37568C092D155F6300259A0D /* TestStructOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37568C082D155F6300259A0D /* TestStructOC.m */; };
 		378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F50AA2CFEE6CB00BBBAE5 /* TestTupleDemo.swift */; };
+		3796DE042D1CEB0C00FF32C7 /* TestPropertyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DE032D1CEB0C00FF32C7 /* TestPropertyDemo.swift */; };
+		3796DE072D1CFB3A00FF32C7 /* TestPropertyOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796DE062D1CFB3A00FF32C7 /* TestPropertyOC.m */; };
 		379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1772CE33F4E00F1F4D6 /* AppDelegate.swift */; };
 		379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA1792CE33F4E00F1F4D6 /* SceneDelegate.swift */; };
 		379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379EA17B2CE33F4E00F1F4D6 /* ViewController.swift */; };
@@ -51,9 +54,14 @@
 
 /* Begin PBXFileReference section */
 		3746CF892D1A4A47009A0681 /* TestClassDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClassDemo.swift; sourceTree = "<group>"; };
+		3746CF8B2D1A569F009A0681 /* TestClassOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClassOC.h; sourceTree = "<group>"; };
+		3746CF8C2D1A569F009A0681 /* TestClassOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassOC.m; sourceTree = "<group>"; };
 		37568C072D155F6300259A0D /* TestStructOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStructOC.h; sourceTree = "<group>"; };
 		37568C082D155F6300259A0D /* TestStructOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStructOC.m; sourceTree = "<group>"; };
 		378F50AA2CFEE6CB00BBBAE5 /* TestTupleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTupleDemo.swift; sourceTree = "<group>"; };
+		3796DE032D1CEB0C00FF32C7 /* TestPropertyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropertyDemo.swift; sourceTree = "<group>"; };
+		3796DE052D1CFB3A00FF32C7 /* TestPropertyOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOC.h; sourceTree = "<group>"; };
+		3796DE062D1CFB3A00FF32C7 /* TestPropertyOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOC.m; sourceTree = "<group>"; };
 		379EA1742CE33F4E00F1F4D6 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379EA1772CE33F4E00F1F4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379EA1792CE33F4E00F1F4D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +164,11 @@
 				37568C072D155F6300259A0D /* TestStructOC.h */,
 				37568C082D155F6300259A0D /* TestStructOC.m */,
 				3746CF892D1A4A47009A0681 /* TestClassDemo.swift */,
+				3746CF8B2D1A569F009A0681 /* TestClassOC.h */,
+				3746CF8C2D1A569F009A0681 /* TestClassOC.m */,
+				3796DE032D1CEB0C00FF32C7 /* TestPropertyDemo.swift */,
+				3796DE052D1CFB3A00FF32C7 /* TestPropertyOC.h */,
+				3796DE062D1CFB3A00FF32C7 /* TestPropertyOC.m */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -315,11 +328,14 @@
 				379EA1822CE33F4E00F1F4D6 /* SwiftDemo.xcdatamodeld in Sources */,
 				379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */,
 				379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */,
+				3796DE072D1CFB3A00FF32C7 /* TestPropertyOC.m in Sources */,
+				3746CF8D2D1A569F009A0681 /* TestClassOC.m in Sources */,
 				3746CF8A2D1A4A47009A0681 /* TestClassDemo.swift in Sources */,
 				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
 				379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */,
 				37CBAACD2CF8087200EE3E13 /* TestEnumOCClass.m in Sources */,
+				3796DE042D1CEB0C00FF32C7 /* TestPropertyDemo.swift in Sources */,
 				379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */,
 				378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,

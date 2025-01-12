@@ -14,8 +14,8 @@
             filePath = "SwiftDemo/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -33,22 +33,6 @@
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "testEqual()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E858D3B-CB93-4C64-AC1F-144F8F21FD5D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftDemo/TestClassDemo.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "testClass()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

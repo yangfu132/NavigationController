@@ -23,12 +23,23 @@ class ViewController: UIViewController {
         
         //testBlok();
 //        testEnum();
-        testClass();
+        //testClass();
+        testProperty();
+    }
+    
+    func testProperty () {
+        let swiftDemo = TestPropertyDemo()
+        swiftDemo.testMain()
+        
+        let ocDemo = TestPropertyOC()
+        ocDemo.testMain()
     }
     
     func testClass() {
         let classDemo = TestClassDemo()
         classDemo.testClass()
+        
+        
     }
     
     func testTuple(){
