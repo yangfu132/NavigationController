@@ -34,6 +34,7 @@
 		37CBAACA2CF807E800EE3E13 /* TestEnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CBAAC92CF807E800EE3E13 /* TestEnumClass.swift */; };
 		37CBAACD2CF8087200EE3E13 /* TestEnumOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBAACC2CF8087200EE3E13 /* TestEnumOCClass.m */; };
 		37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */; };
+		37EFA67E2D34B747009EADCA /* TestSubscriptDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFA67D2D34B747009EADCA /* TestSubscriptDemo.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		37CBAACB2CF8087200EE3E13 /* TestEnumOCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEnumOCClass.h; sourceTree = "<group>"; };
 		37CBAACC2CF8087200EE3E13 /* TestEnumOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEnumOCClass.m; sourceTree = "<group>"; };
 		37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionaryClass.swift; sourceTree = "<group>"; };
+		37EFA67D2D34B747009EADCA /* TestSubscriptDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubscriptDemo.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 				3778D3502D3396CA0094E183 /* TestFunctionDemo.swift */,
 				3778D3522D33A6310094E183 /* TestFunctionOC.h */,
 				3778D3532D33A6310094E183 /* TestFunctionOC.m */,
+				37EFA67D2D34B747009EADCA /* TestSubscriptDemo.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				379FEFA12CF6F5F100C391DE /* TestBlockOCClass.m in Sources */,
 				37CBAACD2CF8087200EE3E13 /* TestEnumOCClass.m in Sources */,
 				3796DE042D1CEB0C00FF32C7 /* TestPropertyDemo.swift in Sources */,
+				37EFA67E2D34B747009EADCA /* TestSubscriptDemo.swift in Sources */,
 				379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */,
 				378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
