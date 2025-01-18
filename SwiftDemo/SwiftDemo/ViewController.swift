@@ -24,7 +24,28 @@ class ViewController: UIViewController {
         //testBlok();
 //        testEnum();
         //testClass();
-        testProperty();
+//        testProperty();
+//        testConstruct();
+//        testDeInit();
+        testOption();
+    }
+    
+    func testOption() {
+        let swiftDemo = TestOptionDemo()
+        swiftDemo.testMain()
+    }
+    
+    func testDeInit() {
+        let demo = TestDeInitDemo();
+        demo.testMain()
+        
+        let ocdemo = TestDeinitOC();
+        ocdemo.testMain();
+    }
+    
+    func testConstruct () {
+        let demo = TestConstructDemo();
+        demo.testMain();
     }
     
     func testProperty () {

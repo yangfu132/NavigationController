@@ -6,3 +6,4 @@
 #import "TestEnumOCClass.h"
 #import "TestClassOC.h"
 #import "TestPropertyOC.h"
+#import "TestDeinitOC.h"
