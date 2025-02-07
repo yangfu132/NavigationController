@@ -27,7 +27,20 @@ class ViewController: UIViewController {
 //        testProperty();
 //        testConstruct();
 //        testDeInit();
-        testOption();
+//        testOption();
+//        testTypeChange()
+        testClassStruct()
+        
+    }
+    
+    func testClassStruct() {
+        let demo = MSClassStructDemo();
+        demo.testMain()
+    }
+    
+    func testTypeChange() {
+        let swiftDemo = TestTypeChangeDemo()
+        swiftDemo.testMain()
     }
     
     func testOption() {

@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestEnumOCClass : NSObject
+@property (nonatomic,strong) NSObject* view;
 - (void) testEnum;
 @end
 

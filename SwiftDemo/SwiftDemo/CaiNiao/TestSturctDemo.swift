@@ -7,6 +7,22 @@
 
 import Foundation
 
+struct BaseStruct {
+    let name:String;
+    init(name:String) {
+        self.name = name;
+    }
+}
+
+//struct 不支持继承
+//struct SomePoint:BaseStruct {
+//    let someInt:Int;
+//    init(someInt:Int) {
+//        self.someInt = someInt
+//        super.init(name:"Point");
+//    }
+//}
+
 class TestStructDemo {
 
     func testCreate() {
