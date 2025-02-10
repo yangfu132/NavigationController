@@ -29,8 +29,14 @@ class ViewController: UIViewController {
 //        testDeInit();
 //        testOption();
 //        testTypeChange()
-        testClassStruct()
+//        testClassStruct()
+        testTestTaskGroupDemo()
         
+    }
+    
+    func testTestTaskGroupDemo() {
+        let demo = TestTaskGroupDemo()
+        demo.testMain()
     }
     
     func testClassStruct() {

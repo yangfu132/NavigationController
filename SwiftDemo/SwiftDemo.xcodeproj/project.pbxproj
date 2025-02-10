@@ -11,11 +11,16 @@
 		3746CF8A2D1A4A47009A0681 /* TestClassDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746CF892D1A4A47009A0681 /* TestClassDemo.swift */; };
 		3746CF8D2D1A569F009A0681 /* TestClassOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3746CF8C2D1A569F009A0681 /* TestClassOC.m */; };
 		37568C092D155F6300259A0D /* TestStructOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37568C082D155F6300259A0D /* TestStructOC.m */; };
+		37745FB22D57003900ED5D23 /* TestActorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37745FB12D57003900ED5D23 /* TestActorDemo.swift */; };
+		37745FB42D58543000ED5D23 /* TestTaskGroupDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37745FB32D58543000ED5D23 /* TestTaskGroupDemo.swift */; };
+		37745FB62D5860CE00ED5D23 /* TestTaskDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37745FB52D5860CE00ED5D23 /* TestTaskDemo.swift */; };
+		37745FB82D587E6B00ED5D23 /* TestSendableDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37745FB72D587E6B00ED5D23 /* TestSendableDemo.swift */; };
 		3778D3512D3396CA0094E183 /* TestFunctionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778D3502D3396CA0094E183 /* TestFunctionDemo.swift */; };
 		3778D3542D33A6310094E183 /* TestFunctionOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3778D3532D33A6310094E183 /* TestFunctionOC.m */; };
 		378863BA2D3CCDA200FAED89 /* TestTypeChangeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378863B92D3CCDA200FAED89 /* TestTypeChangeDemo.swift */; };
 		378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378F50AA2CFEE6CB00BBBAE5 /* TestTupleDemo.swift */; };
 		378F71252D36191400325BAA /* TestInheritOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 378F71242D36191400325BAA /* TestInheritOC.m */; };
+		379244A12D56F31900F44C19 /* TestAsyncDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379244A02D56F31900F44C19 /* TestAsyncDemo.swift */; };
 		379586DE2D37544000EDB97C /* TestConstructDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379586DD2D37544000EDB97C /* TestConstructDemo.swift */; };
 		379586E02D37844700EDB97C /* TestDeInitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379586DF2D37844700EDB97C /* TestDeInitDemo.swift */; };
 		379586E32D3786D000EDB97C /* TestDeinitOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 379586E22D3786D000EDB97C /* TestDeinitOC.m */; };
@@ -72,6 +77,10 @@
 		3746CF8C2D1A569F009A0681 /* TestClassOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClassOC.m; sourceTree = "<group>"; };
 		37568C072D155F6300259A0D /* TestStructOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStructOC.h; sourceTree = "<group>"; };
 		37568C082D155F6300259A0D /* TestStructOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStructOC.m; sourceTree = "<group>"; };
+		37745FB12D57003900ED5D23 /* TestActorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActorDemo.swift; sourceTree = "<group>"; };
+		37745FB32D58543000ED5D23 /* TestTaskGroupDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskGroupDemo.swift; sourceTree = "<group>"; };
+		37745FB52D5860CE00ED5D23 /* TestTaskDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskDemo.swift; sourceTree = "<group>"; };
+		37745FB72D587E6B00ED5D23 /* TestSendableDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSendableDemo.swift; sourceTree = "<group>"; };
 		3778D3502D3396CA0094E183 /* TestFunctionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFunctionDemo.swift; sourceTree = "<group>"; };
 		3778D3522D33A6310094E183 /* TestFunctionOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFunctionOC.h; sourceTree = "<group>"; };
 		3778D3532D33A6310094E183 /* TestFunctionOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFunctionOC.m; sourceTree = "<group>"; };
@@ -79,6 +88,7 @@
 		378F50AA2CFEE6CB00BBBAE5 /* TestTupleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTupleDemo.swift; sourceTree = "<group>"; };
 		378F71232D36191400325BAA /* TestInheritOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestInheritOC.h; sourceTree = "<group>"; };
 		378F71242D36191400325BAA /* TestInheritOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestInheritOC.m; sourceTree = "<group>"; };
+		379244A02D56F31900F44C19 /* TestAsyncDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAsyncDemo.swift; sourceTree = "<group>"; };
 		379586DD2D37544000EDB97C /* TestConstructDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstructDemo.swift; sourceTree = "<group>"; };
 		379586DF2D37844700EDB97C /* TestDeInitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeInitDemo.swift; sourceTree = "<group>"; };
 		379586E12D3786D000EDB97C /* TestDeinitOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDeinitOC.h; sourceTree = "<group>"; };
@@ -186,6 +196,11 @@
 				378863B92D3CCDA200FAED89 /* TestTypeChangeDemo.swift */,
 				37D2EF522D55B09C00136092 /* TestTypeChangeOC.h */,
 				37D2EF532D55B09C00136092 /* TestTypeChangeOC.m */,
+				379244A02D56F31900F44C19 /* TestAsyncDemo.swift */,
+				37745FB12D57003900ED5D23 /* TestActorDemo.swift */,
+				37745FB32D58543000ED5D23 /* TestTaskGroupDemo.swift */,
+				37745FB52D5860CE00ED5D23 /* TestTaskDemo.swift */,
+				37745FB72D587E6B00ED5D23 /* TestSendableDemo.swift */,
 			);
 			path = CaiNiao;
 			sourceTree = "<group>";
@@ -396,11 +411,13 @@
 				379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */,
 				379EA1AB2CEC753D00F1F4D6 /* TestCharacterClass.swift in Sources */,
 				37EFA6802D34E704009EADCA /* TestInheritDemo.swift in Sources */,
+				379244A12D56F31900F44C19 /* TestAsyncDemo.swift in Sources */,
 				3796DE072D1CFB3A00FF32C7 /* TestPropertyOC.m in Sources */,
 				3746CF8D2D1A569F009A0681 /* TestClassOC.m in Sources */,
 				3746CF8A2D1A4A47009A0681 /* TestClassDemo.swift in Sources */,
 				379EA1AF2CEF053F00F1F4D6 /* TestArrayClass.swift in Sources */,
 				379EA1782CE33F4E00F1F4D6 /* AppDelegate.swift in Sources */,
+				37745FB62D5860CE00ED5D23 /* TestTaskDemo.swift in Sources */,
 				379586DE2D37544000EDB97C /* TestConstructDemo.swift in Sources */,
 				37D20F1F2D3B50ED0033075F /* TestARCDemo.swift in Sources */,
 				37D2EF542D55B09C00136092 /* TestTypeChangeOC.m in Sources */,
@@ -411,13 +428,16 @@
 				37EFA67E2D34B747009EADCA /* TestSubscriptDemo.swift in Sources */,
 				378863BA2D3CCDA200FAED89 /* TestTypeChangeDemo.swift in Sources */,
 				379FEF9D2CF6C19800C391DE /* TestBlockClass.swift in Sources */,
+				37745FB82D587E6B00ED5D23 /* TestSendableDemo.swift in Sources */,
 				378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
 				37CBAACA2CF807E800EE3E13 /* TestEnumClass.swift in Sources */,
 				379586E32D3786D000EDB97C /* TestDeinitOC.m in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				378F71252D36191400325BAA /* TestInheritOC.m in Sources */,
+				37745FB22D57003900ED5D23 /* TestActorDemo.swift in Sources */,
 				A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */,
+				37745FB42D58543000ED5D23 /* TestTaskGroupDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

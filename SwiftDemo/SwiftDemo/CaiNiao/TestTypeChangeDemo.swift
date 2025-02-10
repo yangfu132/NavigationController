@@ -35,6 +35,13 @@ class TestTypeChangeDemo {
         testIsType()
         testAsType()
         testAny()
+        testAnyObject()
+        testOC()
+    }
+    
+    func testOC() {
+        let ocDemo = TestTypeChangeOC();
+        ocDemo.testMain();
     }
     
     func testIsType() {
@@ -137,4 +144,20 @@ class TestTypeChangeDemo {
         }
     }
 
+    func testDynamic(){
+        var aa:Any = 12;
+        aa = 3.14;
+        aa = "String";
+        
+        let bb = 1;
+        switch(bb) {
+        case 1:
+            print("aaa")
+            fallthrough
+        case 2:
+            print("22")
+        default:
+            print("dd")
+        }
+    }
 }

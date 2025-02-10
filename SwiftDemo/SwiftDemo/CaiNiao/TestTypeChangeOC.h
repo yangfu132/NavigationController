@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestTypeChangeOC : NSObject
-
+- (void) testMain;
 @end
 
 NS_ASSUME_NONNULL_END
