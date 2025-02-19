@@ -12,7 +12,6 @@ class TestEnumClass {
         testCreate()
         testOrigin()
         testRaw()
-        
     }
     
     func testCreate() {

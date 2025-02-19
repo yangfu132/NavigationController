@@ -30,8 +30,35 @@ class ViewController: UIViewController {
 //        testOption();
 //        testTypeChange()
 //        testClassStruct()
-        testTestTaskGroupDemo()
+//        testOC()
+//        testExtensionDemo()
+        testMianShi()
+        testProtocol()
         
+    }
+    
+    func testProtocol() {
+        let demo = TestProtocolDemo()
+        demo.testMain()
+    }
+    
+    func testMianShi() {
+        let demo = MSMainDemo()
+        demo.testMain()
+    }
+    
+    func testButton() {
+        
+    }
+    
+    func testExtensionDemo() {
+        let demo = TestExtensionDemo()
+        demo.testMain()
+    }
+    
+    func testOC() {
+        let demo = TestOCMain()
+        demo.test()
     }
     
     func testTestTaskGroupDemo() {

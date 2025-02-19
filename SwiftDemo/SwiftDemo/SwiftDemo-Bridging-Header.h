@@ -8,3 +8,6 @@
 #import "TestPropertyOC.h"
 #import "TestDeinitOC.h"
 #import "TestTypeChangeOC.h"
+#import "TestOCMain.h"
+#import "TestExtensionCategoryOC.h"
+#import "TestProtocolOC.h"
