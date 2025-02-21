@@ -31,6 +31,7 @@
 		379586DE2D37544000EDB97C /* TestConstructDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379586DD2D37544000EDB97C /* TestConstructDemo.swift */; };
 		379586E02D37844700EDB97C /* TestDeInitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379586DF2D37844700EDB97C /* TestDeInitDemo.swift */; };
 		379586E32D3786D000EDB97C /* TestDeinitOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 379586E22D3786D000EDB97C /* TestDeinitOC.m */; };
+		3795F5DF2D66C0A200AD2E44 /* TestGenericsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3795F5DE2D66C0A200AD2E44 /* TestGenericsDemo.swift */; };
 		3796DE042D1CEB0C00FF32C7 /* TestPropertyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796DE032D1CEB0C00FF32C7 /* TestPropertyDemo.swift */; };
 		3796DE072D1CFB3A00FF32C7 /* TestPropertyOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796DE062D1CFB3A00FF32C7 /* TestPropertyOC.m */; };
 		3796F90F2D630222006E2576 /* MSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3796F90E2D630222006E2576 /* MSDemoViewController.swift */; };
@@ -118,6 +119,7 @@
 		379586DF2D37844700EDB97C /* TestDeInitDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeInitDemo.swift; sourceTree = "<group>"; };
 		379586E12D3786D000EDB97C /* TestDeinitOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDeinitOC.h; sourceTree = "<group>"; };
 		379586E22D3786D000EDB97C /* TestDeinitOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDeinitOC.m; sourceTree = "<group>"; };
+		3795F5DE2D66C0A200AD2E44 /* TestGenericsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGenericsDemo.swift; sourceTree = "<group>"; };
 		3796DE032D1CEB0C00FF32C7 /* TestPropertyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPropertyDemo.swift; sourceTree = "<group>"; };
 		3796DE052D1CFB3A00FF32C7 /* TestPropertyOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPropertyOC.h; sourceTree = "<group>"; };
 		3796DE062D1CFB3A00FF32C7 /* TestPropertyOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPropertyOC.m; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				37B2ACC82D641CF800E6E610 /* TestProtocolDemo.swift */,
 				37B2ACCC2D64661300E6E610 /* TestProtocolOC.h */,
 				37B2ACCD2D64661300E6E610 /* TestProtocolOC.m */,
+				3795F5DE2D66C0A200AD2E44 /* TestGenericsDemo.swift */,
 			);
 			path = CaiNiao;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				379EA1AD2CEF009700F1F4D6 /* TestForClass.swift in Sources */,
 				379535D82D6032EF007C3559 /* TestAssociate.m in Sources */,
 				379EA1822CE33F4E00F1F4D6 /* SwiftDemo.xcdatamodeld in Sources */,
+				3795F5DF2D66C0A200AD2E44 /* TestGenericsDemo.swift in Sources */,
 				37B1E9872D38DDA9000AFA23 /* TestOptionDemo.swift in Sources */,
 				3778D3542D33A6310094E183 /* TestFunctionOC.m in Sources */,
 				379EA17C2CE33F4E00F1F4D6 /* ViewController.swift in Sources */,
