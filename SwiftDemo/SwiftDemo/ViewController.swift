@@ -12,11 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        var tsDemo:TestStringClass = TestStringClass();
-        tsDemo.testString()
+//        // Do any additional setup after loading the view.
+//        var tsDemo:TestStringClass = TestStringClass();
+//        tsDemo.testString()
+        testSDRuntimeDemo()
+        
     }
-
+    
+    func testSDRuntimeDemo() {
+        let demo = SDRuntimeDemo()
+        demo.testMain()
+    }
 
 }
 
