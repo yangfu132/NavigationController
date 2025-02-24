@@ -32,8 +32,10 @@ class ViewController: UIViewController {
 //        testClassStruct()
 //        testOC()
 //        testExtensionDemo()
-        testMianShi()
-        testProtocol()
+//        testMianShi()
+//        testProtocol()
+        let demo = SDRuntimeDemo()
+        demo.testMain()
         
     }
     

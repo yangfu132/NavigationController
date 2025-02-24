@@ -10,7 +10,9 @@ import UIKit
 
 /**
  *https://juejin.cn/post/6997976106288545822*
- *说明Swfit中只能替换系统方法，而自定义的方法之间无法进行替换
+ *错误：说明Swfit中只能替换系统方法，而自定义的方法之间无法进行替换
+ *https://zeroonet.com/2024/04/15/objc-vs-dynamic/
+ *正确：你需要objc和dynamic同时修饰
  */
 //MARK: - 纯SwiftClass
 
@@ -33,15 +35,12 @@ class PureSwiftClass {
         print("PureSwiftClass.testObjcFinal")
     }
     
-    
-    
-    @objc func testPureAction() {
+    @objc dynamic func testPureAction() {
         print("PureSwiftClass.testPureAction")
     }
 }
 extension PureSwiftClass {
     @objc func swizzle_testPureAction() {
-        swizzle_testPureAction()
         print("swizzle_testPureAction")
     }
 }
@@ -87,7 +86,16 @@ class MuixSwiftClass: UIViewController {
         print("MuixSwiftClass.testObjcFinal")
     }
     
-    @objc func testObject(boolValue : Bool , tempInt : Int , tempFloat : Float , str : String , obj : AnyObject) {
+    @objc func testObjc() {
+        print("MuixSwiftClass.testObjc")
+    }
+    
+    @objc dynamic func testObjcDynamic() {
+        print("MuixSwiftClass.testObjcDynamic")
+    }
+    
+
+    @objc dynamic func testObject(boolValue : Bool , tempInt : Int , tempFloat : Float , str : String , obj : AnyObject) {
         print("MuixSwiftClass.testVoidWithBool")
     }
     
@@ -108,8 +116,12 @@ extension MuixSwiftClass {
         swizzle_viewWillAppear(animated)
         print("swizzle_viewWillAppear")
     }
-    @objc final func swizzle_testObjcFinal() {
-        print("swizzle_testObjcFinal")
+    @objc func swizzle_testObjc() {
+        print("swizzle_testObjc")
+    }
+    
+    @objc func swizzle_testObjectDynamic() {
+        print("swizzle_testObjectDynamic")
     }
 }
 
@@ -119,9 +131,17 @@ extension MuixSwiftClass: SelfAware{
         let swizzledSelector = #selector(swizzle_viewWillAppear(_:))
         swizzlingForClass(MuixSwiftClass.self, originalSelector: originalSelector, swizzledSelector: swizzledSelector)
         
-        let originObjcFinal = #selector(testObjcFinal)
-        let swizzledObjcFinal = #selector(swizzle_testObjcFinal)
-        swizzlingForClass(MuixSwiftClass.self, originalSelector: originObjcFinal, swizzledSelector: swizzledObjcFinal)
+        let originObjc = #selector(testObjc)
+        let swizzledObjc = #selector(swizzle_testObjc)
+        swizzlingForClass(MuixSwiftClass.self, originalSelector: originObjc, swizzledSelector: swizzledObjc)
+  
+        let originObjcDynamic = #selector(testObjcDynamic)
+        let swizzledObjcDynamic = #selector(swizzle_testObjectDynamic)
+        swizzlingForClass(MuixSwiftClass.self, originalSelector: originObjcDynamic, swizzledSelector: swizzledObjcDynamic)
+        
+        
+        testObjc()
+        testObjcDynamic()
     }
 }
 
@@ -149,18 +169,16 @@ extension SelfAware {
 //MARK: - Demo
 class SDRuntimeDemo {
     func testMain() {
-        print("\r\n++++++++++++++++")
-        showClsRuntime(cls: MuixSwiftClass.self)
-        print("\r\n++++++++++++++++")
-        showClsRuntime(cls: PureSwiftClass.self)
+//        print("\r\n++++++++++++++++")
+//        showClsRuntime(cls: MuixSwiftClass.self)
+//        print("\r\n++++++++++++++++")
+//        showClsRuntime(cls: PureSwiftClass.self)
         
         print("\r\n++++++++++++++++")
         
         let muix = MuixSwiftClass()
         muix.testSwizzling()
-        muix.viewWillAppear(true)
         
-        muix.testObjcFinal()
         
         let pure = PureSwiftClass()
         pure.testSwizzling()
