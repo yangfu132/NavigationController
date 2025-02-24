@@ -66,6 +66,7 @@
 		37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */; };
 		37EFA67E2D34B747009EADCA /* TestSubscriptDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFA67D2D34B747009EADCA /* TestSubscriptDemo.swift */; };
 		37EFA6802D34E704009EADCA /* TestInheritDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFA67F2D34E704009EADCA /* TestInheritDemo.swift */; };
+		A10ECC702D6C2C3700F20ABD /* SDRuntimeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10ECC6F2D6C2C3700F20ABD /* SDRuntimeDemo.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +169,7 @@
 		37ECC15A2CF475C200F5CFF1 /* TestDictionaryClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDictionaryClass.swift; sourceTree = "<group>"; };
 		37EFA67D2D34B747009EADCA /* TestSubscriptDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubscriptDemo.swift; sourceTree = "<group>"; };
 		37EFA67F2D34E704009EADCA /* TestInheritDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInheritDemo.swift; sourceTree = "<group>"; };
+		A10ECC6F2D6C2C3700F20ABD /* SDRuntimeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRuntimeDemo.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -307,6 +309,7 @@
 		379EA1762CE33F4E00F1F4D6 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A10ECC6F2D6C2C3700F20ABD /* SDRuntimeDemo.swift */,
 				379BF9522D5AE77000752CFD /* OC */,
 				379FEF9E2CF6F5F100C391DE /* SwiftDemo-Bridging-Header.h */,
 				3725312E2D3F9E6A00D4A2A2 /* MianShi */,
@@ -520,6 +523,7 @@
 				379586E32D3786D000EDB97C /* TestDeinitOC.m in Sources */,
 				379EA17A2CE33F4E00F1F4D6 /* SceneDelegate.swift in Sources */,
 				378F71252D36191400325BAA /* TestInheritOC.m in Sources */,
+				A10ECC702D6C2C3700F20ABD /* SDRuntimeDemo.swift in Sources */,
 				37A2F0FF2D5EE9ED00333932 /* TestExtensionDemo.swift in Sources */,
 				37745FB22D57003900ED5D23 /* TestActorDemo.swift in Sources */,
 				3786D4D32D61796B00DE0705 /* TestCategoryOC.m in Sources */,
