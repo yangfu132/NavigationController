@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol OCForwardingProtocol <NSObject>
 @required
 - (void) forwarding_method_name;
+- (void) protocol_forwarding_method_name;
 @end
 
 NS_ASSUME_NONNULL_END

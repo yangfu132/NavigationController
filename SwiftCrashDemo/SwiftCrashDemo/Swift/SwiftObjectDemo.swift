@@ -7,6 +7,14 @@
 
 import UIKit
 
-class SwiftObjectDemo: NSObject {
+struct StructDemo {
+     var a = 0;
+}
 
+
+
+class SwiftObjectDemo: NSObject {
+    final func testMain() {
+        
+    }
 }

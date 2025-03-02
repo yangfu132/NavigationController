@@ -32,6 +32,9 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		692145012D715B2200990413 /* Exceptions for "SwiftCrashDemo" folder in "SwiftCrashDemo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			additionalCompilerFlagsByRelativePath = {
+				"OC/ContainerCrash/NSArray+Safe.m" = "-Wextra -Wno-sign-compare";
+			};
 			membershipExceptions = (
 				Info.plist,
 			);
