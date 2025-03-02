@@ -15,15 +15,15 @@
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 @implementation NSObject(Forwarding)
-//+ (void)load {
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        // 拦截 `-forwardingTargetForSelector:` 方法，替换自定义实现
-//        [NSObject safeDefenderSwizzlingInstanceMethod: @selector(forwardingTargetForSelector:)withMethod: @selector(jh_forwardingTargetForSelector:)withClass:[NSObject class]];
-//
-//        [NSObject safeDefenderSwizzlingClassMethod: @selector(forwardingTargetForSelector:)withMethod: @selector(jh_forwardingTargetForSelector:) withClass:[NSObject class]];
-//    });
-//}
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 拦截 `-forwardingTargetForSelector:` 方法，替换自定义实现
+        [NSObject safeDefenderSwizzlingInstanceMethod: @selector(forwardingTargetForSelector:)withMethod: @selector(jh_forwardingTargetForSelector:)withClass:[NSObject class]];
+
+        [NSObject safeDefenderSwizzlingClassMethod: @selector(forwardingTargetForSelector:)withMethod: @selector(jh_forwardingTargetForSelector:) withClass:[NSObject class]];
+    });
+}
 
 // 实例方法
 - (id)jh_forwardingTargetForSelector:(SEL)aSelector {
