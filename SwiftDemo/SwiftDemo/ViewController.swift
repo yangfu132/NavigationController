@@ -34,9 +34,20 @@ class ViewController: UIViewController {
 //        testExtensionDemo()
 //        testMianShi()
 //        testProtocol()
+
+//        testRuntime()
+        testMap()
+        
+    }
+    
+    func testMap() {
+        let demo = TestMapDemo()
+        demo.testMain()
+    }
+    
+    func testRuntime() {
         let demo = SDRuntimeDemo()
         demo.testMain()
-        
     }
     
     func testProtocol() {

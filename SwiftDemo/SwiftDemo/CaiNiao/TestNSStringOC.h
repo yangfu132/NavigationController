@@ -1,6 +1,6 @@
 //
-//  OCNSNullCrashDemo.h
-//  SwiftCrashDemo
+//  TestNSStringOC.h
+//  SwiftDemo
 //
 //  Created by yangfl on 2025/3/3.
 //
@@ -9,8 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCNSNullCrashDemo : NSProxy
-
+@interface TestNSStringOC : NSObject
+- (void) testMain;
 @end
 
 NS_ASSUME_NONNULL_END

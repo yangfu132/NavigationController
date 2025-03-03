@@ -15,6 +15,7 @@ struct StructDemo {
 
 class SwiftObjectDemo: NSObject {
     final func testMain() {
-        
+        let stringDemo = "String"
+        print("\(type(of: stringDemo))")
     }
 }
