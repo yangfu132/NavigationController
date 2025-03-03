@@ -8,11 +8,18 @@
 #import "OCCrashDemo.h"
 #import "OCForwardingDemo.h"
 #import "OCKVCCrashDemo.h"
+#import "OCThreadCrashDemo.h"
 @implementation OCCrashDemo
 
 - (void) testMain {
-    [self testSelectorCrash];
-    [self testKVC];
+//    [self testSelectorCrash];
+//    [self testKVC];
+    [self testThread];
+}
+
+- (void) testThread {
+    OCThreadCrashDemo* demo = [[OCThreadCrashDemo alloc] init];
+    [demo testMain];
 }
 
 - (void) testSelectorCrash {

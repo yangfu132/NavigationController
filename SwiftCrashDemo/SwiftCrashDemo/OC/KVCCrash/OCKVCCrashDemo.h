@@ -1,9 +1,14 @@
 //
-//  OCKVCCrashDemo.m
+//  OCKVCCrashDemo.h
 //  SwiftCrashDemo
 //
 //  Created by yangfl on 2025/3/2.
 //
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
 
 /**
  KVC常见的崩溃原因：
@@ -23,17 +28,9 @@
  著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
  */
 
-
-#import "OCKVCCrashDemo.h"
-#import "KVCCrashObject.h"
-
-@implementation OCKVCCrashDemo
-- (void) testMain {
-    KVCCrashObject* kvcDemo = [[KVCCrashObject alloc] init];
-    [kvcDemo testKVCCrash1];
-    [kvcDemo testKVCCrash2];
-    [kvcDemo testKVCCrash3];
-    [kvcDemo testKVCCrash4];
-    
-}
+@interface OCKVCCrashDemo : NSObject
+@property (nonatomic,assign) NSInteger crash4Age;
+- (void) testMain;
 @end
+
+NS_ASSUME_NONNULL_END

@@ -1,17 +1,15 @@
 //
-//  OCCrashDemo.h
+//  OCThreadCrashDemo.h
 //  SwiftCrashDemo
 //
-//  Created by yangfl on 2025/2/28.
+//  Created by yangfl on 2025/3/3.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-//https://juejin.cn/post/7077746745500762119
-
-@interface OCCrashDemo : NSObject
+@interface OCThreadCrashDemo : NSObject
 - (void) testMain;
 @end
 
