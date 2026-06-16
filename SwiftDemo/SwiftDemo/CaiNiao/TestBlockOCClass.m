@@ -10,17 +10,21 @@
 
 NSInteger gloableVar = 10;
 
-
 @implementation TestBlockOCClass
 
 - (void) testBlock {
     [self testClosures];
     
     TestBlockClass* swiftBlockDemo = [TestBlockClass new];
+    swiftBlockDemo.printBlock();
     [swiftBlockDemo testBlock];
     
     TestDictionaryClass* swiftDictDemo = [TestDictionaryClass new];
     [swiftDictDemo testDictionary];
+    
+    SwiftBlockObject* swiftObject = [[SwiftBlockObject alloc] init];
+    swiftObject.printBlock();
+    
 }
 
 - (void) testA {

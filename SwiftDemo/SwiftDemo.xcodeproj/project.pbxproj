@@ -68,6 +68,8 @@
 		37EFA6802D34E704009EADCA /* TestInheritDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFA67F2D34E704009EADCA /* TestInheritDemo.swift */; };
 		695668772D7579C400DA4A78 /* TestNSStringOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 695668762D7579C400DA4A78 /* TestNSStringOC.m */; };
 		695668792D757B0800DA4A78 /* TestMapDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695668782D757B0800DA4A78 /* TestMapDemo.swift */; };
+		69EA072B2D781C39000A8718 /* MSWebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EA072A2D781C39000A8718 /* MSWebViewDemo.swift */; };
+		69EA072D2D78246F000A8718 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 69EA072C2D78246F000A8718 /* index.html */; };
 		A10ECC702D6C2C3700F20ABD /* SDRuntimeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10ECC6F2D6C2C3700F20ABD /* SDRuntimeDemo.swift */; };
 		A17CF6752CE6ED5D00EBCD18 /* TestStringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */; };
 /* End PBXBuildFile section */
@@ -174,6 +176,8 @@
 		695668752D7579C400DA4A78 /* TestNSStringOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSStringOC.h; sourceTree = "<group>"; };
 		695668762D7579C400DA4A78 /* TestNSStringOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSStringOC.m; sourceTree = "<group>"; };
 		695668782D757B0800DA4A78 /* TestMapDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMapDemo.swift; sourceTree = "<group>"; };
+		69EA072A2D781C39000A8718 /* MSWebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSWebViewDemo.swift; sourceTree = "<group>"; };
+		69EA072C2D78246F000A8718 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		A10ECC6F2D6C2C3700F20ABD /* SDRuntimeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRuntimeDemo.swift; sourceTree = "<group>"; };
 		A17CF6742CE6ED5D00EBCD18 /* TestStringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -271,10 +275,12 @@
 		3725312E2D3F9E6A00D4A2A2 /* MianShi */ = {
 			isa = PBXGroup;
 			children = (
+				69EA072C2D78246F000A8718 /* index.html */,
 				3725312F2D3F9E9500D4A2A2 /* MSClassStructDemo.swift */,
 				3796F90E2D630222006E2576 /* MSDemoViewController.swift */,
 				37003C5A2D63151000BC7D89 /* MSEnumDemo.swift */,
 				37003C5C2D63181100BC7D89 /* MSMainDemo.swift */,
+				69EA072A2D781C39000A8718 /* MSWebViewDemo.swift */,
 			);
 			path = MianShi;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				379EA1872CE33F4F00F1F4D6 /* LaunchScreen.storyboard in Resources */,
+				69EA072D2D78246F000A8718 /* index.html in Resources */,
 				379EA1842CE33F4F00F1F4D6 /* Assets.xcassets in Resources */,
 				379EA17F2CE33F4E00F1F4D6 /* Main.storyboard in Resources */,
 			);
@@ -525,6 +532,7 @@
 				3793A2782D59D16300D2971C /* TestDispatchDemo.swift in Sources */,
 				37B2ACCE2D64661300E6E610 /* TestProtocolOC.m in Sources */,
 				378F50AB2CFEE6CB00BBBAE5 /* TestTupleDemo.swift in Sources */,
+				69EA072B2D781C39000A8718 /* MSWebViewDemo.swift in Sources */,
 				37ECC15B2CF475C200F5CFF1 /* TestDictionaryClass.swift in Sources */,
 				37003C5B2D63151000BC7D89 /* MSEnumDemo.swift in Sources */,
 				695668792D757B0800DA4A78 /* TestMapDemo.swift in Sources */,

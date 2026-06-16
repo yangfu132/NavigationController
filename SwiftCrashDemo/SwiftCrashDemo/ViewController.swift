@@ -17,8 +17,12 @@ class ViewController: UIViewController {
     }
     
     func testSwiftDemo(){
-        let demo = SwiftObjectDemo()
+        let objectDemo = SwiftObjectDemo()
+        objectDemo.testMain()
+        
+        let demo = SwiftDemo()
         demo.testMain()
+        
     }
 
 

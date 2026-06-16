@@ -7,7 +7,13 @@
 
 import Foundation
 
+@objc class SwiftBlockObject:NSObject {
+    @objc let printBlock = {print("SwiftBlockObject")}
+}
+
 @objcMembers class TestBlockClass : NSObject {
+    
+    let printBlock = {print("TestBlockClass")}
     
     func testBlock() {
         testClosures()
@@ -15,6 +21,7 @@ import Foundation
         testTakesAClosure()
         testCapture()
         testReference()
+        testTail()
     }
     
     func testClosures () {
@@ -117,4 +124,39 @@ import Foundation
         print(alsoIncrementByTen)
     }
     
+    
+    func testTailFunction(_ a:Int, _ b:Int, _ c:Int, by:(_ item1:Int, _ item2:Int, _ item3:Int)->Bool)->Bool {
+        return by(a,b,c)
+    }
+    
+    func testTail () {
+        print(testTailFunction(2, 3, 4) { item1, item2, item3 in
+            return item1 + item2 > item3
+        })
+    }
+    func testEscaping() {
+        let handler = {}
+    }
+    
+    var escapingHandler:((Int)->Void)?
+    
+    func testEscapingFunction(_ a:Int, handler: @escaping (Int)->Void) {
+        let newHandler =  { (value:Int) -> Void in
+            
+        }
+        self.escapingHandler = handler
+    }
+    
+    
+    
 }
+
+func gloableFunc() {
+    print("gloableFunc")
+    
+    func subFunc() {
+        print("gloableFunc")
+    }
+}
+
+

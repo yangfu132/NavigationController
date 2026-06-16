@@ -6,14 +6,71 @@
 //
 
 import UIKit
+import WebKit
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,WKNavigationDelegate, WKScriptMessageHandler {
     
-    var boolean_expression:Bool = true;
+    var webView:WKWebView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//#if 0
+//        if let filePath = Bundle.main.path(forResource: "index", ofType: "html") {
+//            let fileURL = URL(fileURLWithPath: filePath)
+//            webView?.loadFileURL(fileURL, allowingReadAccessTo: fileURL)
+//        }
+//#else
+        let myURL = URL(string: "http://127.0.0.1:5000")
+        let myRequest = URLRequest(url: myURL!)
+        webView?.load(myRequest)
+        testMain()
+//#endif
+    }
+    
+    //MARK: - WebView
+    
+    override func loadView() {
+        let contentController = WKUserContentController()
+        contentController.add(self, name: "nativeCallback")
+        
+        let config = WKWebViewConfiguration()
+        config.userContentController = contentController
+        
+        webView = WKWebView(frame: .zero, configuration: config)
+        webView!.navigationDelegate = self
+        view = webView!
+        
+    }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if message.name == "nativeCallback" {
+            if let msg = message.body as? String {
+                showAlert(message: msg)
+            }
+        }
+    }
+
+    func showAlert(message: String) {
+        let alertController = UIAlertController(title: "提示", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "确定", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        webView.evaluateJavaScript("displayDate()") { (any, error) in
+            if (error != nil) {
+                print(error ?? "err")
+            }
+        }
+    }
+    
+    // MARK: - test
+    
+    var boolean_expression:Bool = true;
+    
+    func testMain() {
         // Do any additional setup after loading the view.
 //        testFor()
 //        testString()
@@ -21,7 +78,7 @@ class ViewController: UIViewController {
 //        testIf();
 //        testDictionary();
         
-        //testBlok();
+        testBlok();
 //        testEnum();
         //testClass();
 //        testProperty();
@@ -36,8 +93,7 @@ class ViewController: UIViewController {
 //        testProtocol()
 
 //        testRuntime()
-        testMap()
-        
+//        testMap()
     }
     
     func testMap() {

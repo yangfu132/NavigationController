@@ -31,14 +31,39 @@ class TestMapDemo {
     
     func testString() {
         let str = "123456"
-        let someArray = str.map { c in
+        let some = str.reduce("o", {(someString, c) -> String in
+            someString + String(c)
+        })
+        print(some)
+        
+        let mapArray = str.map { c in
             String(c) + "\r\n"
         }
-        print(someArray)
+        print(mapArray)
+        
+        let filterArray = str.filter { c in
+            (Int(String(c)) ?? 0)%2 == 0
+        }
+        print(filterArray)
     }
     
     func testArray() {
         let values = [1.0,2,3,4,5,6,7]
+        let someDouble = values.reduce(10) { partialResult, value in
+            partialResult + value
+        }
+        print(someDouble)
+        
+        let someString = values.reduce("A") { partialResult, value in
+            partialResult + String(value)
+        }
+        print(someString)
+        
+        let filterArray = values.filter { value in
+            value > 5.0
+        }
+        print(filterArray)
+        
         var squares:[Double] = []
 
         for value in values {
@@ -76,6 +101,11 @@ class TestMapDemo {
         }
         print(revolsedEnumrated)
         
+        let collections = [[5, 2, 7], [4, 8], [9, 1, 3]]
+        let flat = collections.flatMap { $0 }
+        print(flat)
+        // [5, 2, 7, 4, 8, 9, 1, 3]
+        
 //
 //        let numbers = [7, 8, 9, 10]
 //        let indexAndNum: [String] = numbers.enumerate().map { (index, element) in
@@ -90,18 +120,34 @@ class TestMapDemo {
     
     func testDictionary() {
         let dict = ["a":1.0,"b":2.0]
-        let some = dict.map { (key: String, value: Double) in
+        let flat = dict.compactMap { (key: String, value: Double) in
+            key
+        }
+        print(flat)
+        
+        let mapArray = dict.map { (key: String, value: Double) in
             key + String(value)
         }
+        print(mapArray)
         
-        print(some)
+        let filterDict = dict.filter{ (key: String, value: Double) in
+            value > 1.0
+        }
+        print(filterDict)
+        
+//        let someV = dict.reduce("begin:") { partialResult, (key: String, value: Double) in
+//            partialResult + key + String(value)
+//        }
+        
+//        print(someV)
+        
+       
     }
     
     func testSet () {
-        let structValues:Set<TMHashStructDemo> = [TMHashStructDemo(name: "0", age: 0),
+        var structValues:Set<TMHashStructDemo> = [TMHashStructDemo(name: "0", age: 0),
                                                   TMHashStructDemo(name: "0", age: 0),
                                                   TMHashStructDemo(name: "0", age: 0)]
-        
         
         var intValues:Set = [1,2,3]
         let (inserted,memberAfterInsert) = intValues.insert(2)
@@ -109,5 +155,11 @@ class TestMapDemo {
         
          let (result,value) = intValues.insert(4)
         print("result:\(result),value:\(value)")
+        
+        structValues.insert(TMHashStructDemo(name: "1", age: 1))
+        let filterArray = structValues.filter { demo in
+            demo.age > 0
+        }
+        print(filterArray)
     }
 }
